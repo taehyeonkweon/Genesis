@@ -46,7 +46,7 @@ rgb, depth, segmentation, normal = cam.render(rgb=True, depth=True, segmentation
 cam.start_recording()
 import numpy as np
 
-for i in range(120):
+for i in range(1000):
     scene.step()
     cam.set_pose(
         pos=(3.0 * np.sin(i / 60), 3.0 * np.cos(i / 60), 2.5),
